@@ -1,0 +1,22 @@
+var s = "audacity";
+
+var udacityizer = function(s) {  
+    // Right now, the variable s === "audacity"
+    // Manipulate s to make it equal to "Udacity"
+    // Your code goes here!
+    
+#.toUpperCase() is a string method, meaning it acts on the string it's attached to, which in this case is the "U" from s[1]
+#.slice() is another string method, which acts on the string s in this case.
+#.slice(start, [end]) will grab the part of the string from the index of start to the index of end. 
+#The fact that [end] shows up in brackets means that it's optional. 
+#If it isn't there, then .slice() will select all of the string from start to the very end of the string. s.slice(2) gives us "dacity".
+
+s = s[1].toUpperCase() + s.slice(2);             
+
+  
+    
+    return s;
+};
+
+// Did your code work? The line below will tell you!
+console.log(udacityizer(s));
